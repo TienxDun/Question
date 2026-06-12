@@ -1,3 +1,13 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 - <<'PY'\nfrom pathlib import Path\ntext = Path\\('/workspaces/Question/index\\.html'\\)\\.read_text\\(encoding='utf-8'\\)\nstart = text\\.find\\('<div style=\"display:contents\" dir=\"auto\"><ul id=\"37b612b8-7523-80fb-a309-de66fdc8a37f\" class=\"bulleted-list\"><li style=\"list-style-type:disc\"><strong>Trường Đại học Khoa học Tự nhiên, ĐHQG TP\\.HCM</strong>'\\)\nend = text\\.find\\('</li></ol></div><div style=\"display:contents\" dir=\"auto\"><p id=\"37b612b8-7523-8092-978a-ca1dc557e543\"', start\\)\nprint\\('end', end\\)\nprint\\(text\\[start:end\\]\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 - <<'PY'\nfrom pathlib import Path\npath = Path\\('/workspaces/Question/index\\.html'\\)\ntext = path\\.read_text\\(encoding='utf-8'\\)\nold = '<div style=\"display:contents\" dir=\"auto\"><ul id=\"37b612b8-7523-80fb-a309-de66fdc8a37f\" class=\"bulleted-list\"><li style=\"list-style-type:disc\"><strong>Trường Đại học Khoa học Tự nhiên, ĐHQG TP\\.HCM</strong> đã có phản hồi chính thức từ phòng đào tạo \\(tài khoản &quot;Giáo Vụ&quot;\\) trên diễn đàn của trường\\. Khi sinh viên hỏi: <em>“trong 5% đó có tính những môn em học cải thiện không ạ, hay là chỉ tính mấy môn bị rớt \\(học lại\\) thôi ạ\\?”</em>, đại diện phòng đào tạo trả lời dứt khoát: <em>“theo quy chế học vụ 2021 của Trường thì </em><em><strong>không có quy định về việc hạ bậc tốt nghiệp do ảnh hưởng bởi tín chỉ học lại/ học cải thiện</strong></em><em> em nhé\\.”</em> <a href=\"https://courses\\.fit\\.hcmus\\.edu\\.vn/q2a/\\?qa=2562&amp;qa_1=h%E1%BB%8Dc-c%E1%BA%A3i-thi%E1%BB%87n-c%C3%B3-%E1%BA%A3nh-h%C6%B0%E1%BB%9Fng-t%E1%BB%9Bi-lo%E1%BA%A1i-b%E1%BA%B1ng\">\\[8\\]</a> Đây là một bằng chứng trực tiếp, xác nhận rằng ngay cả khi gộp chung &quot;học lại/học cải thiện&quot;, trường này cũng khẳng định <strong>không có quy định hạ bậc</strong>, càng không có chuyện riêng học cải thiện bị tính vào ngưỡng 5%\\.<div style=\"display:contents\" dir=\"ltr\"><figure id=\"37b612b8-7523-80ef-8f11-f9264ea85f4c\" class=\"image\"><a href=\"image%205\\.png\"><img style=\"width:627\\.96875px\" src=\"image%205\\.png\"/></a></figure></div></li></ul></div>'\nnew = ''\nif old not in text:\n    raise SystemExit\\('target block not found'\\)\npath\\.write_text\\(text\\.replace\\(old, new, 1\\), encoding='utf-8'\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }
